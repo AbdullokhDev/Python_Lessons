@@ -1,41 +1,71 @@
-# #Ex1:
-# pythonDictionary = {
-#     'if' : 'statement returns true or false',
-#     'tuple' : 'used to store multiple items in a single variable',
-#     'list' : 'used for changable list',
-#     'for' : 'used for looping the function',
-#     '%' : 'modular division is used to find remainder',
-#     'array' : 'used to save many values of the the same data',
-#     'dictionary' : 'used for store the data',
-#     }
-# print("List: ")
-# for a, b in sorted(pythonDictionary.items()):
-#     print(f"{a.title()} means that {b.upper()}")
+- # Ex1:
+#dad = {'name' : 'Abdusalom', 'DoB' : 1951, 'Nationality' : 'Uzbekistan'}
+#mom = {'name' : 'Shohida', 'DoB' : 1956, 'Nationality' : 'Uzbekistan'}
+#print(f"My father's name is {dad['name']}. He was born in {dad['DoB']}. \n When it comes to my mother She was born in {mom['DoB']}")
+# products = {
+#     'apple': 10000,
+#     'pomegranate': 20000,
+#     'grape': 40000,
+#     'apricot': 30000}
 
-# #Ex2:
-countries = {
-    'Uzbekistan' : 'Tashkent',
-    'USA' : 'washington D.C',
-    'Argentina' : 'Buenos Aires',
-    'Australia' : 'Canberra',
-    'Colombia' : 'Bogota',
-    'Japan' : 'Tokyo',
-    'Germany' : 'Berlin',
-    'Egypt' : 'Cairo',
-    'United Kingdom	' : 'London',
-    'Norway' : 'Oslo'
-    }
-# print('Countries of the world: ')
-# for country in sorted(countries):
-#     print(country.upper())
-# print("The capitals of the countries: ")
-# for capital in sorted(countries.values()):
-#     print(capital)
+ # Ex2:
+#favouriteFood = {'dad' : 'palov', 'mom' : 'samsa', 'olderBrother' : 'chuchvara', 'me' : 'pizza'}
+#print(f"My favourite food is {favouriteFood['me'].title()}")
+# # print(products.keys())
 
-#Ex3:
-countryName = input("Enter any country you would like to visit: ").lower()
-capital = countries.get(countryName)
-if capital == None:
-    print("Sorry we does not offer for this country")
+#  Ex3:
+# pythonDictionary = {'tuple' : 'list that unchangeable', 'if' : 'used for looping', 'else' : 'to continue if statement', 'integer' : 'type of object, used for numbers', 'string' : 'type of object, used for letters'}
+# #print(f"If statement is {pythonDictionary['if'].upper()}")
+# print("Products that can be found in our store: ")
+# for product in products.keys():
+#     print(product.title())
+
+#  Ex4:
+# key = input("Enter any python's terminology: ").lower()
+# print(pythonDictionary.get(key, "Sorry, we do not have such word!"))
+# products = {
+#     'apple': 10,
+#     'pomegranate': 22,
+#     'grape': 40,
+#     'apricot': 31}
+# listToPurchase = ['bread', 'fish', 'apricot', 'grape', 'egg']
+# print("Products that can be found in our store:")
+# for product in products:
+#     if product in listToPurchase:
+#         print(f"{product.title()} {products[product]} dollar")
+# for item in listToPurchase:
+#     if item not in products:
+#         print(f"Please, bring {item.title()} product")
+
+# Ex5:
+pythonDictionary = {'tuple' : 'list that unchangeable', 'if' : 'used for looping', 'else' : 'to continue if statement', 'integer' : 'type of object, used for numbers', 'string' : 'type of object, used for letters'}
+# products = {
+#     'apple': 10,
+#     'pomegranate': 22,
+#     'grape': 40,
+#     'apricot': 31}
+# # print("Products in our store: ")
+# # for product in sorted(products):
+# #     print(product.title())
+# print(products.values())
+
+smartphones = {
+    'abdullokh':'iphone xr',
+    'amir' : 'iphone xs max',
+    'shakhida' : 'mi9',
+    'abror':'galaxy s10 plus',
+    'said':'oneplus 8pro',
+    'ali':'iphone xr',
+    'hojiakbar':'mi9'}
+print("Users are using these phones: ")
+# for smartphone in smartphones.values():
+#     print(smartphone)
+for smartphone in set(smartphones.values()):
+        print(smartphone)
+
+key = input("Enter some python word: ").lower()
+translate = pythonDictionary.get(key)
+if translate == None:
+    print("Sorry, we do not have such word!")
 else:
-    print(f"Congratulations, you can go {countryName.title()} country. It's capital is {capital.title()}")
+    print(f"{key.title()} means that {translate}")
