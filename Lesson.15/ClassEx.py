@@ -1,4 +1,4 @@
-- # Ex1:
+# Ex1:
 #dad = {'name' : 'Abdusalom', 'DoB' : 1951, 'Nationality' : 'Uzbekistan'}
 #mom = {'name' : 'Shohida', 'DoB' : 1956, 'Nationality' : 'Uzbekistan'}
 #print(f"My father's name is {dad['name']}. He was born in {dad['DoB']}. \n When it comes to my mother She was born in {mom['DoB']}")
@@ -69,3 +69,5 @@ if translate == None:
     print("Sorry, we do not have such word!")
 else:
     print(f"{key.title()} means that {translate}")
+    
+#finished
